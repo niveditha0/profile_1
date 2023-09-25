@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <form action="update-profile"></form>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="well">
+            <div class="kmt_profile-info">
+              <div class="kmt-profile__subtitle">
+                <h2>Personal Information</h2>
+              </div>
+              <form action="update-profile">
+                <div class="form-group">
+                  <label for="Firstname">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Firstname"
+                    placeholder="First Name"
+                    name="fristname"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastname">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Lastname"
+                    placeholder="Last Name"
+                    name="lastname"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone_no">Phone number</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="Phone_NO"
+                    placeholder="Phone number"
+                    name="phone number"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter email"
+                    name="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <span>Communication Preferences</span>
+                  <div class="checkbox">
+                    <label><input type="checkbox" name="email" /> Email</label>
+                    <label><input type="checkbox" name="text" /> Text</label>
+                    <label
+                      ><input type="checkbox" name="phonenumber" /> Phone
+                      number</label
+                    >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <span>Marketing Emails</span>
+                  <div class="checkbox">
+                    <label
+                      ><input type="checkbox" name="signup" />Sign up for emails
+                      and Marketing</label
+                    >
+                  </div>
+                </div>
+                <div class="kmt-profile__actions">
+                  <button type="submit" class="btn btn-block">
+                    Update Profile
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="well">
+            <div class="kmt-profile_active">
+              <div class="kmt-profile__subtitle">
+                <h2>Active Sold-To</h2>
+              </div>
+              <div class="kmt-profile_soldto">
+                <div class="info">
+                  <p>Account # 0070000545</p>
+                  <p>UNITED CENTRAL SUPPLY - CHAPMANVILLE WHSE 33</p>
+                  <p>150 GARRETT FORK ROAD</p>
+                  <p>CHAPMANVILLE, WV 25508</p>
+                </div>
+                <div class="action_button">
+                  <a href="#" class="btn btn-block"> Change Sold-To</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="well">
+            <div class="kmt-profile_company">
+              <div class="kmt-profile__subtitle">
+                <h2>Company Information</h2>
+              </div>
+              <div class="account_type">
+                <span class="title">Account Type</span>
+                <p>Business</p>
+              </div>
+              <div class="company_name">
+                <span class="title">Company Name</span>
+                <p>UNITED CENTRAL SUPPLY - CHAPMANVILLE WHSE 33</p>
+              </div>
+              <div class="industry">
+                <span class="title">Industry</span>
+              </div>
+              <div class="role">
+                <span class="title">Role</span>
+                <p>b2bcustomergroup</p>
+              </div>
+              <div class="kmt-profile_company-contact">
+                <p>Need to update your Company Information?</p>
+                <p>Contact Customer Service at</p>
+                <p>800-446-7738</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="well">
+            <div class="ktm-profile_preferences">
+              <div class="kmt-profile__subtitle">
+                <h2>Preferences</h2>
+              </div>
+              <form action="update-profile-preferences">
+                <span class="title">Catalog</span>
+                <select
+                  id="profile.catalogOption"
+                  name="catalogOption"
+                  labelkey="label.updateProfile.page.catalog"
+                  class="form-control valid"
+                  aria-invalid="false"
+                >
+                  <option value="ISO">ISO</option>
+                  <option value="ANSI" selected="selected">ANSI</option>
+                </select>
+                <span class="title">Decimal Notation</span>
+                <select
+                  id="profile.numberFormatOption"
+                  name="numberFormatOption"
+                  labelkey="label.updateProfile.page.numberformat"
+                  class="form-control valid"
+                  aria-invalid="false"
+                >
+                  <option value="Comma">Comma</option>
+                  <option value="Periods" selected="selected">Periods</option>
+                </select>
+                <div class="kmt-profile__actions">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block js-btn-validation"
+                    disabled="disabled"
+                  >
+                    Update Preferences
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
